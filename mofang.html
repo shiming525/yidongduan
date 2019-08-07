@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            /* transform: rotateX(60deg) rotateY(270deg); */
+            animation: boxs 15s linear infinite;
+        }
+        .pulic {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+
+        }
+        .pulic ul li {
+            width: 80px;
+            height: 80px;
+            float: left;
+            text-align: center;
+            line-height: 80px;
+            margin-top: 15px;
+            margin-left: 14px;
+            font-size: 50px;
+            border-radius: 16px;
+        }
+        .top {
+            background-color: rgba(0,0,0,0);
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        .top ul li {
+            background-color: aqua;
+        }
+        .bot {
+            background-color: rgba(0,0,0,0);
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .bot ul li {
+            background-color: salmon;
+        }
+        .left {
+            background-color: rgba(0,0,0,0);
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .left ul li {
+            background-color: rebeccapurple;
+        }
+        .right {
+            background-color: rgba(0,0,0,0);
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        .right ul li {
+            background-color: fuchsia;
+        }
+        .befor {
+            background-color: rgba(0,0,0,0);
+            transform: translateZ(-150px);
+        }
+        .befor ul li{
+            background-color: darkorange;
+        }
+        .after {
+            background-color: rgba(0,0,0,0);
+            transform: translateZ(150px);
+        }
+        .after ul li{
+            background-color: red;
+        }
+        @keyframes boxs {
+            from {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top pulic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+        <div class="bot pulic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+        <div class="left pulic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+        <div class="right pulic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+        <div class="befor pulic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+        <div class="after pulic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
