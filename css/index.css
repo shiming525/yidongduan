@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+dl,
+ol,
+dt,
+dd,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+input {
+  border: 0 none;
+  outline-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 16px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 18px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 18.75px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 20.7px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 32px;
+    height: 100%;
+  }
+}
+html,
+body {
+  background-color: #f7f7f7;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.top {
+  width: 100%;
+  height: 1.375rem;
+  padding: 0 .3125rem;
+  background-color: #f7f7f7;
+  position: relative;
+}
+.top span {
+  position: absolute;
+  top: .53125rem;
+  font-size: .4375rem;
+  color: #d2059a;
+}
+.top span i {
+  display: inline-block;
+  width: .375rem;
+  height: .375rem;
+  border: .1875rem solid #fff;
+  border-top: 0.1875rem solid #d2059a;
+  vertical-align: middle;
+}
+.top h1 {
+  font-size: .625rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  text-align: center;
+}
+.top img {
+  width: .75rem;
+  position: absolute;
+  top: .3125rem;
+  right: .3125rem;
+}
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner ul {
+  position: absolute;
+  width: 3.75rem;
+  left: 50%;
+  bottom: .625rem;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.banner ul li {
+  width: .3125rem;
+  height: .3125rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.card {
+  width: 100%;
+  padding: .25rem .125rem;
+}
+.card ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card ul li {
+  width: 6.375rem;
+}
+.card ul li img {
+  width: 100%;
+}
+.service {
+  width: 100%;
+  border-top: .03125rem solid #ccc;
+  padding-bottom: .46875rem;
+  background-color: #f1f1f1;
+}
+.service ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service ul li {
+  width: 4.9375rem;
+  border-bottom: .03125rem solid #ccc;
+  border-right: .03125rem solid #ccc;
+}
+.service ul li:nth-child(4n) {
+  border-right: none;
+}
+.service ul li img {
+  width: 100%;
+}
+.family {
+  width: 100%;
+  display: flex;
+  border-bottom: .03125rem solid #ccc;
+}
+.family div {
+  flex: 1;
+}
+.family div :first-child {
+  border-right: .03125rem solid #ccc;
+}
+.family div img {
+  width: 100%;
+  vertical-align: top;
+}
+.family div img:first-child {
+  border-bottom: .03125rem solid #ccc;
+}
+.hot {
+  width: 100%;
+  height: 1.5625rem;
+  background: linear-gradient(to top, #b3a8a8, #f7f7f7);
+  padding-top: .78125rem;
+  padding-left: .3125rem;
+  border-bottom: .03125rem solid #666;
+}
+.hot h1 {
+  font-size: .5rem;
+  font-weight: 400;
+}
+.banner2 {
+  width: 100%;
+  padding-bottom: .46875rem ;
+  background-color: #f1f1f1;
+}
+.banner2 div img {
+  width: 100%;
+  vertical-align: top;
+  border-bottom: .03125rem solid #ccc;
+}
+.tab {
+  width: 100%;
+  height: 1.375rem;
+  display: flex;
+  justify-content: space-around;
+}
+.tab div {
+  width: 2.0625rem;
+  font-size: .5625rem;
+  line-height: 1.375rem;
+}
+.tab div:first-child {
+  color: #d2059a;
+  border-bottom: 0.0625rem solid #d2059a;
+}
+.tail {
+  width: 100%;
+  padding-bottom: .5rem;
+  background-color: #f7f7f7;
+}
+.tail div {
+  padding-top: .5rem;
+  border-top: .03125rem solid #ccc;
+}
+.tail div img {
+  width: 100%;
+}
+.tail div p:nth-child(2) {
+  line-height: .75rem;
+  font-size: .46875rem;
+}
+.tail div p:nth-child(3) {
+  line-height: .875rem;
+  font-size: .625rem;
+  color: #54534c;
+}
+.more {
+  width: 100%;
+  height: .9375rem;
+  background-color: #fff;
+  line-height: .9375rem;
+  font-size: .5625rem;
+  text-align: center;
+}
+.more span {
+  display: inline-block;
+  margin-left: .625rem;
+  transform: rotateZ(90deg);
+}
+.login {
+  background-color: #d2059a;
+}
+.login div:first-child {
+  height: .46875rem;
+  background-color: #f7f7f7;
+}
+.login a {
+  height: .9375rem;
+  line-height: .9375rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: .5625rem;
+  font-weight: 400;
+  padding: 0 .3125rem;
+}
+.fr {
+  float: right;
+}
